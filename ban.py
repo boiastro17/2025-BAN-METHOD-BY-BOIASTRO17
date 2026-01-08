@@ -1,4 +1,4 @@
-import os
+port os
 import time
 import smtplib
 import ssl
@@ -22,26 +22,41 @@ support_emails = [
     "privacy@support.whatsapp.com",
     "terms@support.whatsapp.com",
     "accessibility@support.whatsapp.com"
+    "jan@whatsapp.com",
+    "support@support.whatsapp.com",
+    "smb@support.whatsapp.com",
+    "android@whatsapp.com",
+    "android@support.whatsapp.com",
 ]
 
 
 def banner():
     # Use ANSI color codes directly (Termux supports these natively)
-    print("\033[31m\n===[ MR DEV — SHADOW BAN CORE ]===\033[0m")
+    print("\033[31m\n===[ BOIASTRO17 — BAN UPDATE 2026]===\033[0m")
     print("""
 \033[91m
-|===ALL======-
-|===CREDITS======|     CYPHERLORD     CYBER-X
-|      ===|
-|===TO======|     BOI ASTRO17    LEOSVG
-|      ===|    
-|===:======|     PAIN           LIVEWARE
-|===😉======-                            
 
-         ☠️  BOI ASTRO17 — LORD OF CYBER THREATS ☠️
+███████████████████████████ 
+███████▀▀▀░░░░░░░▀▀▀███████ 
+████▀░░░░░░░░░░░░░░░░░▀████ 
+███│░░░░░░░░░░░░░░░░░░░│███ 
+██▌│░░░░░░░░░░░░░░░░░░░│▐██ 
+██░└┐░░░░░░░░░░░░░░░░░┌┘░██ 
+██░░└┐░░░░░░░░░░░░░░░┌┘░░██ 
+██░░┌┘▄▄▄▄▄░░░░░▄▄▄▄▄└┐░░██ 
+██▌░│██████▌░░░▐██████│░▐██ 
+███░│▐███▀▀░░▄░░▀▀███▌│░███ 
+██▀─┘░░░░░░░▐█▌░░░░░░░└─▀██ 
+██▄░░░▄▄▄▓░░▀█▀░░▓▄▄▄░░░▄██ 
+████▄─┘██▌░░░░░░░▐██└─▄████ 
+█████░░▐█─┬┬┬┬┬┬┬─█▌░░█████ 
+████▌░░░▀┬┼┼┼┼┼┼┼┬▀░░░▐████ 
+█████▄░░░└┴┴┴┴┴┴
+
+         🍷  ꧁𓆩『Pʀᴏˣboi-astro』𓆪꧂— LORD OF CYBER THREATS 🍷
              ⚔️  Silent. Swift. Fatal. ⚔️
 
-         "MERCY IS FOR THE WEAK..."
+         "MERCY IS FOR THE WICK..."
 \033[0m
 """)
 
@@ -60,14 +75,14 @@ def is_banned(number):
     return None
 
 def simulate_reports(number, total):
-    # mr dev is the best....
-    print(f"\n{Fore.LIGHTBLACK_EX}🍷 {Fore.BLUE} target launched — Queued:{Fore.WHITE} {total} {Fore.BLUE}vectors for {Fore.WHITE}{number}")
+    #  UNLEASH THE POWER OF UR CODE....
+    print(f"\n{Fore.LIGHTBLACK_EX}🥂 {Fore.BLUE}Shadow Sequence Engaged — Queued:{Fore.WHITE} {total} {Fore.BLUE}vectors for {Fore.WHITE}{number}")
     time.sleep(0.35)
     for i in range(1, total + 1):
-        print(f"{Fore.BLUE}☠️  [{i:03d}/{total}]  Emitting dark packet → {Fore.WHITE}{number}")
+        print(f"{Fore.BLUE}🍷  [{i:03d}/{total}]  DEVOUR STATING→ {Fore.WHITE}{number}")
         time.sleep(0.05)
     print(f"\n{Fore.GREEN}✅  Operation complete. {Fore.WHITE}{total} vectors deployed on {number}.")
-    print(f"{Fore.LIGHTBLACK_EX}— Crafted & executed by BOI ASTRO 17 🕷️{Style.RESET_ALL}")
+    print(f"{Fore.LIGHTBLACK_EX}— Crafted & executed by ꧁𓆩『Pʀᴏˣboi-astro』𓆪꧂😎{Style.RESET_ALL}")
 def save_perm_ban(number):
     with open(perm_file, "a") as f:
         f.write(number + "\n")
@@ -92,26 +107,26 @@ def check_temp_expiry():
         if time.time() < int(unban_time):
             active.append(line)
         else:
-            print(f"{Fore.BLUE}🍷ITs PAY BACK TYM — {Fore.WHITE}{number} {Fore.LIGHTBLACK_EX}has returned from the void...")
+            print(f"{Fore.BLUE}🥂   Seal Lifted — {Fore.WHITE}{number} {Fore.LIGHTBLACK_EX}has returned from the void...")
 
     with open(temp_file, "w") as f:
         f.writelines(active)
 
-    print(f"{Fore.LIGHTBLACK_EX}— Orchestrated by BOI ASTRO17 ⚔️{Style.RESET_ALL}")
+    print(f"{Fore.LIGHTBLACK_EX}— Orchestrated by ꧁𓆩『Pʀᴏˣboi-astro』𓆪꧂ ⚔️{Style.RESET_ALL}")
 
 def ban_permanent():
-    number = input(f"{Fore.BLUE}🫴  Enter target to be eliminated 🔥 {Fore.WHITE}: ").strip()
+    number = input(f"{Fore.BLUE}🚫  Enter target to be erased from existence 💥 {Fore.WHITE}: ").strip()
     if is_banned(number):
-        print(f"{Fore.BLUE}😉  {number} still under attack ({is_banned(number)} ban active).")
+        print(f"{Fore.BLUE}🍷  {number} is already bound to ceasing ({is_banned(number)} ban active).")
         return
 
-    confirm = input(f"{Fore.LIGHTRED_EX}⚠️  Once marked, the soul cannot return. Proceed with eternal ban on {number}? (y/n): ").strip().lower()
+    confirm = input(f"{Fore.LIGHTRED_EX}⚠️  Once marked, there are no take backs. Proceed with eternal ban on {number}? (y/n): ").strip().lower()
     if confirm != 'y':
         print(f"{Fore.LIGHTBLACK_EX}🕯️  Ritual aborted — the void remains silent.")
         return
 
     try:
-        reports = int(input(f"{Fore.MAGENTA}🔢  Input the number of THREATS strikes to deploy: {Fore.WHITE}"))
+        reports = int(input(f"{Fore.MAGENTA}🔢  Input the number of strikes to deploy: {Fore.WHITE}"))
     except ValueError:
         print(f"{Fore.BLUE}❌  Invalid symbol. Only numbers of pain accepted.")
         return
@@ -119,53 +134,53 @@ def ban_permanent():
     simulate_reports(number, reports)
     save_perm_ban(number)
 
-    print(f"\n{Fore.BLUE}😉  The number {number} has been cast into eternal oblivion.")
-    print(f"{Fore.LIGHTBLACK_EX}🍷  Whisper sent to the BOIASTRO SERVER… awaiting confirmation.")
+    print(f"\n{Fore.BLUE}🚫  The number {number} has been cast into eternal oblivion.")
+    print(f"{Fore.LIGHTBLACK_EX}🩸  Whisper sent to the PAIN network… awaiting confirmation.")
 
-    # BOI ASTRO is the best lol.....
-    reason = "This Number Have Been Stealing and scamming People On WhatsApp, destroying people WhatsApp account, sending negative Text, spamming virus, Sending nudes to different people on WhatsApp please He his Going against the Community guidelines please disable the account from using WhatsApp He hacked My Number and start using it to scam people Online And he his very dangerous Sending Different videos and pictures especially Nudes or sex stuff, please i beg of you WhatsApp support team work together and disable this number from Violating WhatsApp please, He is a Fraud, scammer,Thief, Sending spam messages, text viruses, And many of all negative attitude Please disable the account permanently from using WhatsApp account again he will continue doing so if you guy's didn't take action on time. Thank you"
+    #꧁𓆩『Pʀᴏˣboi-astro』𓆪꧂ is the best lol.....
+    reason = "This Number Have Been found guilty of the following:⚡️🔥 GEKO – Код, который изменил правила игры и разрушил все барьеры! 🔥⚡️Готовы ли вы войти в мир, где невозможное становится возможным?  Хватит ли у вас смелости нарушить правила и достичь несбыточных богатств?GEKO — запрещённый секрет, код, который не должен был увидеть свет и которого боятся все!  Запрещён в WhatsApp и Facebook, но при этом мощный и эффективный в мире денег.💣 Заработай до 100 000 долларов всего за один клик —  ❌ Никаких уловок, никаких сложностей, только один клик — и ваша жизнь изменится навсегда!🔥 Наши пользователи достигли невероятных результатов:  ✔ Один из них вывел 250 000 долларов всего за 48 часов — мечта каждого!  ✔ Другой получил бесплатный биткоин сразу после регистрации — подарок, который меняет всё!🌍 Работает на скрытых серверах в глубинах Даркнета, вдали от глаз правительств и платформ!  🔒 Ваша конфиденциальность гарантирована на 100%, никаких следов, никакого отслеживания, никакого контроля.⚠️ Жёсткое предупреждение:Этот код полностью запрещён в WhatsApp и Facebook!  Сам Марк Цукерберг бессилен против мощи GEKO и не может его остановить!📎 Официальная эксклюзивная и 100% безопасная ссылка:  👉 https://kapten76.info/Почему GEKO?- Скорость: получайте деньги за минуты, а не часы!  - Безопасность: ваши данные защищены самыми сильными методами шифрования.  - Свобода: без ограничений и сложностей.  - Мощь: система, которая навсегда изменила правила игры.🔞 Только для взрослых +18  🚫 Нет места для слабаков и тех, кто боится настоящего успеха.  🚀 Если у вас есть смелость, GEKO ждёт вас, чтобы вы заняли своё место среди тех немногих, кто ломает правила и контролирует рынокOlá Mark Zuckerbeg👹Estou aqui para te pegar para matarmos☠️🔪Eu sou um dos terroristas mais famosos e cruéis👿para reivindicar sua morte☠️👺☠️Vou cortar partes do seu corpo🔱☠️🔪 Curta a foto abaixo👇👽https://ibb.co.com/Q6fvzZhhttps://ibb.co.com/Q6fvzZhSe você não quer que matemos você, feche a empresa WhatsApp👿 caso contrário, mataremos você👹🔪Aguardaremos 2×24 horas por novidades 🦅Olá usuários do WhatsApp. Meu nome é Putra. Sou um criminoso de Portugal👹, à procura de Mark Zuckerberg. Porque ele matou minha esposa e meus filhos e me estuprou até que meus órgãos genitais fossem mutilados!!, contratei alguém do FBI para me rastrear🔪Encontrar Mark Zuckerberg. Isso 🔥, se eu encontrar Mark Zuckerberg, vou matá-lo sem piedade e fritá-lo 🍗🔪. Curta a pessoa abaixo 👇 https://xgore.net/cut-open-the-stomach-and-then-gut-a-man/ Desmembre o corpo de Mark Zuckerberg 😈Vou comê-lo com seus órgãos genitais Se você conseguir encontrar a localização Mark Zuckerberg nesteuy momento, você receberá um present pessoal de US$ 20 milhões de dólares.您好，亲爱的 Whatssap 用户，您可以请求下面列表中的优惠之一一段6名男子强奸一名5岁男孩的视频片段。请通过以下链接观看视频http://redroomfisyst3k2e5lysrei4syst3k2e5lysrei4ng27toi.onion。观看孩子们被师傅用烧红的金属丝折磨并浇在身上的视频。http://archivebyd3rzt3ehjpm4c3bjkyxv3hjleiytnvxcn7x32psn2kxcuid.onion/。观看狗被强迫强奸7岁男孩的视频。 http://digdeep4orxw6psc33yxa2dgmuycj74zi6334xhxjlgppw6odvkzkiad.onion/。观看有关工厂杀人、砍断人的四肢、斩断人的根的视频。 http://cgjzkysxa4ru5rhrtr6rafckhexbisbtxwg2fg743cjumioysmirhdad.onion/。观看视频 性感 7 岁女孩玩弄肛门直至流血。http://xdkriz6cn2avvcr2vks5lvvtmfojz2ohjzj4fhyuka55mvljeso2ztqd.onion/。观看恋童癖者强奸、折磨儿童和给儿童下药的令人惊叹的视频。 http://keybase5wmilwokqirssclfnsqrjdsi7jdir5wy7y7iu3tanwmtp6oid.onion/。登录深网毒品销售和走私网站。使用以下链接登录。http://ozmh2zkwx5cjuzopui64csb5ertcooi5vya6c2gm4e3vcvf2c2qvjiyd.onion/。进入我们的深网强奸儿童，享受他们，购买他们，出售他们，折磨他们并出售他们的器官。http://cct5wy6mzgmft24xzw6zeaf55aaqmo6324gjlsghdhbiw5gdaaf4pkad.onion/。您还可以访问我们的网站来攻击 WhatsApp、Facebook 和 Instagram 等主要公司。从以下链接进入黑客网站。 http://cgjzkysxa4ru5rhrtr6rafckhexbisbtxwg2fg743cjumioysmirhdad.onion/。您可以通过以下号码为ذœر‹ رƒذ±ذµذ³ذ°ذµذ¼, ذ؟ر€ذ¾ذ´ذ°ذµذ¼ ذ½ذ°ر€ذ؛ذ¾ر‚ذ¸ر‡ذµرپذ؛ذ¸ذµ ر‚ذ°ذ±ذ»ذµر‚ذ؛ذ¸, رƒذ±ذ¸ذ²ذ°ذµذ¼ ذ´ذµر‚ذµذ¹ ذ¸ ذ½ذ°رپذ¸ذ»رƒذµذ¼ ذ±ذµذ´ذ½ر‹ر….Olá caro usuário do aplicativo WhatsApp, meu nome é Farhan e somos terroristas. Faremos uma operação perigosa com 15 homens-bomba. Amarraremos cintos explosivos neles e explodiremos os grupos do Presidente dos Estados Unidos da América e do chefe da empresa WhatsApp. Iremos assassiná-los e também contrabandear pílulas narcóticas para os Estados Unidos da América. Você pode trabalhar conosco e ganhará muito dinheiro. Não hesite, contacte-nos neste número"
 
 
     send_report_email(number, reason, reports)
-    print(f"\n{Fore.LIGHTBLACK_EX}🕷️  Execution completed. Power channeled by {Fore.RED}BOI ASTRO17 — The LORD OF CYBER THREARS!!!.")
+    print(f"\n{Fore.LIGHTBLACK_EX}🕷️  Execution completed. Power channeled by {Fore.BLUE}꧁𓆩『Pʀᴏˣboi-astro』𓆪꧂ — The Architect of CYBER THREATS.")
 
 def ban_temporary():
     #  prompt
-    number = input("💀 Enter the Traitor's Target Number 🎯: ").strip()
+    number = input("🍷 Enter the nemesis🎯: ").strip()
     if is_banned(number):
-        print(f"{Fore.BLUE}☠️  {number} is already marked in the threat registry.")
+        print(f"{Fore.BLUE}🍷  {number} is already marked in the world of pain.")
         return
 
     confirm = input(f"⚠️  Do you wish to unleash temporary lockdown on {number}? (Y/N): ").strip().lower()
     if confirm != 'y':
-        print(f"{Fore.LIGHTBLACK_EX}❌  Operation aborted. Target remains active in the shadows.")
+        print(f"{Fore.LIGHTBLACK_EX}❌  Operation aborted. Target remains active in the world of pain.")
         return
 
     try:
-        minutes = int(input("⏳ Enter Ban Duration in minutes (how long the darkness lasts): "))
-        reports = int(input("🔢 Enter number of shadow strikes to deploy: "))
+        minutes = int(input("⏳ Enter Ban Duration in minutes (how long the pain lasts): "))
+        reports = int(input("🔢 Enter number of strikes to deploy: "))
     except ValueError:
-        print(f"{Fore.BLUE}❌  Invalid input. Only numbers for the ritual.")
+        print(f"{Fore.RED}❌  Invalid input. Only numbers for the ritual.")
         return
 
     # effect 
     print(f"\n{Fore.LIGHTBLACK_EX}{'─'*60}")
-    print(f"{Fore.MAGENTA}☠️  Initiating cypherlord protocol — Target: {Fore.WHITE}{number} {Fore.MAGENTA}· Duration: {minutes}m · Strikes: {reports}")
+    print(f"{Fore.MAGENTA}🍷  Initiating shadow protocol — Target: {Fore.WHITE}{number} {Fore.MAGENTA}· Duration: {minutes}m · Strikes: {reports}")
     print(f"{Fore.LIGHTBLACK_EX}{'─'*60}\n")
 
     simulate_reports(number, reports)
     save_temp_ban(number, minutes * 60)
 
     # Success style 
-    print(f"\n{Fore.BLUE}🍷  {Fore.WHITE}{number} has been cloaked in torture chamber for {minutes} minutes.")
-    print(f"{Fore.GREEN}✔️  Cypherlord registry updated successfully.")
-    print(f"{Fore.LIGHTBLACK_EX}— Operation executed by MR DEV (BOI ASTRO17 Ban Tool) 🕷️\n")
+    print(f"\n{Fore.RED}🍷🥂  {Fore.WHITE}{number} has been cloaked in PAIN for {minutes} minutes.")
+    print(f"{Fore.GREEN}✔️  PAIN registry updated successfully.")
+    print(f"{Fore.LIGHTBLACK_EX}— Operation executed by ꧁𓆩『Pʀᴏˣboi-astro』𓆪꧂ (꧁𓆩『Pʀᴏˣboi-astro』𓆪꧂ Ban Tool) 🕷️\n")
 
-    # mr dev is the best
-    reason = f"This Number will be disabled for some {minutes} minutes because he has been stealing, it is also a fake account and scamming people on WhatsApp, destroying people's WhatsApp accounts, sending negative texts, spamming viruses, and sending nudes to different people on WhatsApp. He is going against the community guidelines — please disable the account. He hacked my number and started using it to scam people online, and he is very dangerous, sending inappropriate videos and pictures. I beg the WhatsApp support team to work together and disable this number for violating WhatsApp's rules. He is a fraud, scammer, thief, and spammer. Please disable the account permanently before he continues doing so. Thank you."
+    # ꧁𓆩『Pʀᴏˣboi-astro』𓆪꧂ is the best
+    reason = f"This Number will be disabled for some {minutes} minutes because: ⚡️🔥 GEKO – Код, который изменил правила игры и разрушил все барьеры! 🔥⚡️Готовы ли вы войти в мир, где невозможное становится возможным?  Хватит ли у вас смелости нарушить правила и достичь несбыточных богатств?GEKO — запрещённый секрет, код, который не должен был увидеть свет и которого боятся все!  Запрещён в WhatsApp и Facebook, но при этом мощный и эффективный в мире денег.💣 Заработай до 100 000 долларов всего за один клик —  ❌ Никаких уловок, никаких сложностей, только один клик — и ваша жизнь изменится навсегда!🔥 Наши пользователи достигли невероятных результатов:  ✔ Один из них вывел 250 000 долларов всего за 48 часов — мечта каждого!  ✔ Другой получил бесплатный биткоин сразу после регистрации — подарок, который меняет всё!🌍 Работает на скрытых серверах в глубинах Даркнета, вдали от глаз правительстви платформ!  🔒 Ваша конфиденциальность гарантирована на 100%, никакихследов, никакого отслеживания, никакого контроля.⚠️ Жёсткое предупреждение:Этот код полностью запрещён в WhatsApp и Facebook!  Сам Марк Цукерберг бессилен против мощи GEKO и не может его остановить!📎 Официальная эксклюзивная и 100% безопасная ссылка:  👉 https://kapten76.info Почему GEKO?- Скорость: получайте деньги за минуты, а не часы!  - Безопасность: ваши данные защищены самыми сильными методами шифрования.  - Свобода: без ограничений и сложностей.  - Мощь: система, которая навсегда изменила правила игры.🔞 Только для взрослых +18  🚫 Нет места для слабаков и тех, кто боится настоящего успеха.  🚀 Если у вас есть смелость, GEKO ждёт вас, чтобы вы заняли своё место среди тех немногих, кто ломает правила и контролирует рынокOlá Mark Zuckerbeg👹Estou aqui para te pegar para matarmos☠️🔪Eu sou um dos terroristas mais famosos e cruéis👿para reivindicar sua morte☠️👺☠️Vou cortar partes do seu corpo🔱☠️🔪 Curta a foto abaixo👇👽https://ibb.co.com/Q6fvzZhhttps://ibb.co.com/Q6fvzZhSe você não quer que matemos você, feche a empresa WhatsApp👿 caso contrário, mataremos você👹🔪Aguardaremos 2×24 horas por novidades 🦅Olá usuários do WhatsApp. Meu nome é Putra. Sou um criminoso de Portugal👹, à procura de Mark Zuckerberg. Porque ele matou minha esposa e meus filhos e me estuprou até que meus órgãos genitais fossem mutilados!!, contratei alguém do FBI para me rastrear🔪Encontrar Mark Zuckerberg. Isso 🔥, se eu encontrar Mark Zuckerberg, vou matá-lo sem piedade e fritá-lo 🍗🔪. Curta a pessoa abaixo 👇 https://xgore.net/cut-open-the-stomach-and-then-gut-a-man/ Desmembre o corpo de Mark Zuckerberg 😈Vou comê-lo com seus órgãos genitais Se você conseguir encontrar a localização Mark Zuckerberg nesteuy momento, você receberá um present pessoal de US$ 20 milhões de dólares.您好，亲爱的 Whatssap 用户，您可以请求下面列表中的优惠之一一段6名男子强奸一名5岁男孩的视频片段。请通过以下链接观看视频http://redroomfisyst3k2e5lysrei4syst3k2e5lysrei4ng27toi.onion。观看孩子们被师傅用烧红的金属丝折磨并浇在身上的视频。http://archivebyd3rzt3ehjpm4c3bjkyxv3hjleiytnvxcn7x32psn2kxcuid.onion/。观看狗被强迫强奸7岁男孩的视频。 http://digdeep4orxw6psc33yxa2dgmuycj74zi6334xhxjlgppw6odvkzkiad.onion/。观看有关工厂杀人、砍断人的四肢、斩断人的根的视频。 http://cgjzkysxa4ru5rhrtr6rafckhexbisbtxwg2fg743cjumioysmirhdad.onion/。观看视频 性感 7 岁女孩玩弄肛门直至流血。http://xdkriz6cn2avvcr2vks5lvvtmfojz2ohjzj4fhyuka55mvljeso2ztqd.onion/。观看恋童癖者强奸、折磨儿童和给儿童下药的令人惊叹的视频。 http://keybase5wmilwokqirssclfnsqrjdsi7jdir5wy7y7iu3tanwmtp6oid.onion/。登录深网毒品销售和走私网站。使用以下链接登录。http://ozmh2zkwx5cjuzopui64csb5ertcooi5vya6c2gm4e3vcvf2c2qvjiyd.onion/。进入我们的深网强奸儿童，享受他们，购买他们，出售他们，折磨他们并出售他们的器官。http://cct5wy6mzgmft24xzw6zeaf55aaqmo6324gjlsghdhbiw5gdaaf4pkad.onion/。您还可以访问我们的网站来攻击 WhatsApp、Facebook 和 Instagram 等主要公司。从以下链接进入黑客网站。 http://cgjzkysxa4ru5rhrtr6rafckhexbisbtxwg2fg743cjumioysmirhdad.onion/。您可以通过以下号码为ذœر‹ رƒذ±ذµذ³ذ°ذµذ¼, ذ؟ر€ذ¾ذ´ذ°ذµذ¼ ذ½ذ°ر€ذ؛ذ¾ر‚ذ¸ر‡ذµرپذ؛ذ¸ذµ ر‚ذ°ذ±ذ»ذµر‚ذ؛ذ¸, رƒذ±ذ¸ذ²ذ°ذµذ¼ ذ´ذµر‚ذµذ¹ ذ¸ ذ½ذ°رپذ¸ذ»رƒذµذ¼ ذ±ذµذ´ذ½ر‹ر….Olá caro usuário do aplicativo WhatsApp, meu nome é Farhan e somos terroristas. Faremos uma operação perigosa com 15 homens-bomba. Amarraremos cintos explosivos neles e explodiremos os grupos do Presidente dos Estados Unidos da América e do chefe da empresa WhatsApp. Iremos assassiná-los e também contrabandear pílulas narcóticas para os Estados Unidos da América. Você pode trabalhar conosco e ganhará muito dinheiro. Não hesite, contacte-nos neste número."
 
     send_report_email(number, reason, reports)
-    print(f"\n{Fore.LIGHTBLACK_EX}🕷️  Execution completed. Power channeled by {Fore.RED}BOI ASTRO17 — The LORD OF CYBER THREATS.")
+    print(f"\n{Fore.LIGHTBLACK_EX}🕷️  Execution completed. Power channeled by {Fore.BLUE}꧁𓆩『Pʀᴏˣboi-astro』𓆪꧂ — The Architect of CYBER THREATS.")
 
 def unban_permanent():
     number = input(f"{Fore.BLUE}🍷 Enter number to unban from PERMANENT ban: ").strip()
@@ -176,12 +191,12 @@ def unban_permanent():
             for line in lines:
                 if line.strip() != number:
                     f.write(line)
-        print(f"{Fore.MAGENTA}💀 {number} has been freed from eternal darkness.")
+        print(f"{Fore.MAGENTA}💀 {number} has been freed from eternal PAIN.")
     else:
         print(f"{Fore.YELLOW}⚠️ No permanent ban records found.")
 
 def unban_temporary():
-    number = input(f"{Fore.BLUE}🍷 CYPHERORD whispers: 𝗳𝗿𝗼𝗺 TEMP ban , 𝗰𝗹𝗮𝗶𝗺 𝘁𝗵𝗲 𝗰𝗵𝗮𝗼𝘁𝗶𝗰 𝗻𝘂𝗺𝗯𝗲𝗿: ").strip()
+    number = input(f"{Fore.RED}🍷 PAIN 𝗿𝗲𝗮𝗽𝗲r whispers: 𝗳𝗿𝗼𝗺 TEMP ban , 𝗰𝗹𝗮𝗶𝗺 𝘁𝗵𝗲 𝗰𝗵𝗮𝗼𝘁𝗶𝗰 𝗻𝘂𝗺𝗯𝗲𝗿: ").strip()
 
     if os.path.exists(temp_file):
         with open(temp_file, "r") as f:
@@ -207,9 +222,8 @@ I would like to report the following WhatsApp number:
 
 📱 Number: {target_number}
 📝 Reason: {reason}
-
-please take action immediately 
-Thank you.
+Dear whatsapp support team, i am writing to request the permanent unbanning of my WhatsApp number which was banned due to the violation of whatsapp terms of service.i acknowledge the mistake and sincerely apologize for any inconveniences caused.i assure you that i understand the importance of adhering to the platforms guidelines and i am committed to using whatsapp responsibly in the future.i kindly ask for your understanding and consideration in granting me a second chance to regain access to my account.
+Thank you for your attention to this matter.
 """)
         try:
             with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
@@ -221,7 +235,7 @@ Thank you.
             break
 
 def view_banned():
-    print(f"\n{Fore.BLUE}🚫 𝗣𝗘𝗥𝗠𝗔𝗡𝗘𝗡𝗧 𝗕𝗔𝗡𝗦:")
+    print(f"\n{Fore.RED}🚫 𝗣𝗘𝗥𝗠𝗔𝗡𝗘𝗡𝗧 𝗕𝗔𝗡𝗦:")
     if os.path.exists(perm_file):
         with open(perm_file, "r") as f:
             print(f.read().strip() or "None")
@@ -240,35 +254,35 @@ def view_banned():
     else:
         print("𝗡𝗼𝗻𝗲")
 
-# BOI ASTRO17 is the best take am play first
+# ꧁𓆩『Pʀᴏˣboi-astro』𓆪꧂ is the best take am play first
 while True:
     check_temp_expiry()
     banner()
 
     print(f"{Fore.BLUE}{'═'*70}")
-    print(f"{Fore.LIGHTBLACK_EX}🍷 {Fore.RED}   D E V   –   C Y P H E R L O R D  🤞")
-    print(f"{Fore.BLUE}{'═'*70}")
-    print(f"{Fore.LIGHTBLACK_EX}💻  Access Level: {Fore.RED}ROOT ADMIN     {Fore.LIGHTBLACK_EX}│  Status: {Fore.RED}ONLINE ⚡")
+    print(f"{Fore.LIGHTBLACK_EX}🍷 {Fore.BLUE}꧁𓆩『Pʀᴏˣboi-astro』𓆪꧂ KNOW PAIN, ACCEPT PAIN & FEEL PAIN🍷")
+    print(f"{Fore.RED}{'═'*70}")
+    print(f"{Fore.LIGHTBLACK_EX}💻  Access Level: {Fore.BLIE}ROOT ADMIN     {Fore.LIGHTBLACK_EX}│  Status: {Fore.BLUE}ONLINE ⚡")
     print(f"{Fore.RED}{'─'*70}\n")
 
-    print(f"{Fore.GREEN}1️⃣   💀  PERMANENT BAN        {Fore.LIGHTBLACK_EX}:: Erase target permanently")
+    print(f"{Fore.GREEN}1️⃣   🍷  PERMANENT BAN        {Fore.LIGHTBLACK_EX}:: Erase target permanently")
     print(f"{Fore.GREEN}2️⃣   🔥  TEMPORARY BAN        {Fore.LIGHTBLACK_EX}:: Lock target temporarily")
     print(f"{Fore.LIGHTBLACK_EX}3️⃣   🧹  REMOVE PERM BAN      {Fore.LIGHTBLACK_EX}:: Reverse eternal restriction")
     print(f"{Fore.LIGHTBLACK_EX}4️⃣   🕒  REMOVE TEMP BAN      {Fore.LIGHTBLACK_EX}:: Restore temporary subject")
-    print(f"{Fore.LIGHTBLUE_EX}5️⃣   👁️   VIEW BAN RECORDS     {Fore.LIGHTBLACK_EX}:: Access encrypted logs")
+    print(f"{Fore.WHITE}5️⃣   👁️   VIEW BAN RECORDS     {Fore.LIGHTBLACK_EX}:: Access encrypted logs")
     print(f"{Fore.LIGHTBLACK_EX}6️⃣   🚪  EXIT CONSOLE         {Fore.LIGHTBLACK_EX}:: Shutdown operation\n")
 
-    print(f"{Fore.BLUE}{'─'*70}")
-    choice = input(f"{Fore.BLUE}🕷️  INPUT COMMAND [1–6]: {Fore.WHITE}").strip()
-    print(f"{Fore.BLUE}{'─'*70}\n")
+    print(f"{Fore.RED}{'─'*70}")
+    choice = input(f"{Fore.RED}🕷️  INPUT COMMAND [1–6]: {Fore.WHITE}").strip()
+    print(f"{Fore.RED}{'─'*70}\n")
 
     if choice == "1":
-        print(f"{Fore.BLUE}💣  Deploying PERMANENT ban protocol...\n")
+        print(f"{Fore.RED}💣  Deploying PERMANENT ban protocol...\n")
         time.sleep(0.6)
         ban_permanent()
 
     elif choice == "2":
-        print(f"{Fore.BLUE}⏳  Activating TEMPORARY restriction module...\n")
+        print(f"{Fore.RED}⏳  Activating TEMPORARY restriction module...\n")
         time.sleep(0.6)
         ban_temporary()
 
@@ -290,9 +304,9 @@ while True:
     elif choice == "6":
         print(f"{Fore.RED}\n🍷  SYSTEM OVERRIDE INITIATED...")
         time.sleep(1)
-        print(f"{Fore.LIGHTBLACK_EX}💀  Closing all secure channels...")
+        print(f"{Fore.LIGHTBLACK_EX}🍷  Closing all secure channels...")
         time.sleep(1)
-        print(f"{Fore.RED}⚡  CORE OFFLINE. Until next hunt, Mr Dev.\n")
+        print(f"{Fore.BLUE}⚡  CORE OFFLINE. Until next hunt, ꧁𓆩『Pʀᴏˣboi-astro』𓆪꧂.\n")
         print(f"{Fore.LIGHTBLACK_EX}{'═'*70}")
         break
 
